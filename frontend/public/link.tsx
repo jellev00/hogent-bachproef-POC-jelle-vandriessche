@@ -1,0 +1,23 @@
+import * as React from "react"
+
+function Link(props:any) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={16}
+      height={16}
+      fill="none"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M3.47 6.53a.75.75 0 011.06 1.061l-.727.727a2.743 2.743 0 003.879 3.879l.727-.727a.75.75 0 011.06 1.06l-.726.727a4.243 4.243 0 01-6-6zm8 1.879a.75.75 0 001.06 1.06l.727-.726a4.243 4.243 0 00-6-6l-.727.727a.75.75 0 001.061 1.06l.727-.727a2.743 2.743 0 013.879 3.879zm-.94-1.879a.75.75 0 10-1.06-1.06l-4 4a.75.75 0 101.06 1.06z"
+        clipRule="evenodd"
+      />
+    </svg>
+  )
+}
+
+export default Link

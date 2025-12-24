@@ -12,13 +12,15 @@ const navbar = () => {
             </div>
             <ul
                 tabIndex={-1}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-2xl z-1 mt-5 w-52 p-2 shadow text-base-400">
+                className="menu menu-sm dropdown-content bg-base-100 rounded-2xl mt-5 w-52 p-2 shadow text-base-400">
                 <li><a>How It Works</a></li>
                 <li><a>Features</a></li>
                 <li><a>Roadmap</a></li>
+                <li className="p-1"><a className="btn bg-base-100 text-secondary border-base-400">Sign In</a></li>
+                <li className="p-1"><a className="btn bg-primary text-primary-content border-none">Get Started</a></li>
             </ul>
             </div>
-            <a className="btn btn-ghost text-xl font-bold text-secondary">
+            <a className="px-1 btn btn-ghost text-xl font-bold text-secondary">
                 <Image src={LOGO} alt={"DepGuard AI Logo"}/>
                 DepGuard <span className="text-primary">AI</span>
             </a>
@@ -30,7 +32,7 @@ const navbar = () => {
                 <li><a>Roadmap</a></li>
             </ul>
         </div>
-        <div className="navbar-end flex gap-2">
+        <div className="navbar-end hidden lg:flex lg:gap-2">
             <a className="btn bg-base-100 text-secondary border-base-400">Sign In</a>
             <a className="btn bg-primary text-primary-content border-none">Get Started</a>
         </div>

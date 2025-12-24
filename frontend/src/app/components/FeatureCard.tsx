@@ -16,14 +16,12 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
     iconClassName = '',
 }) => {
   return (
-    <div className="card flex justify-center items-center bg-base-100 w-64 shadow-sm rounded-xl">
-        <div className="flex justify-center items-center bg-primary/20 text-primary w-14 h-14 rounded-lg p-4 mt-6">
-          {icon}
-        </div>
-        <div className="card-body items-center text-center">
-            <h2 className="card-title text-secondary">{title}</h2>
-            <p className="text-base-400">{description}</p>
-        </div>
+    <div className="p-6 text-center bg-base-100 shadow-sm rounded-xl">
+      <div className="w-14 h-14 rounded-xl bg-primary/20 text-primary flex items-center justify-center mx-auto mb-5">
+        {icon}
+      </div>
+        <h3 className="text-lg font-semibold text-secondary mb-3">{title}</h3>
+        <p className="text-base-400 text-sm leading-relaxed">{description}</p>
     </div>
   )
 }
